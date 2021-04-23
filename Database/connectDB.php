@@ -1,7 +1,7 @@
 <?php 		/*procedural connection to DB*/
 	//For Local Host
 	$host = 'localhost';
-	$name = 'restaurant_codinglab';
+	$database = 'restaurant_codinglab';
 	$user = 'root';
 	$pass = 'root';
 
@@ -12,7 +12,7 @@
 	// $pass = 'fbcf8801';
 
 
-	$connect = mysqli_connect($host, $user, $pass, $name);	/*connect with build-in function*/
+	$connect = mysqli_connect($host, $user, $pass, $database);	/*connect with build-in function*/
 
 	if (mysqli_connect_error()) {	/*check for errors(connection)*/
 		echo mysqli_connect_error();	
