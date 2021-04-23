@@ -22,7 +22,7 @@
       if ($_SESSION['user']['Name'] == "Tima") {
     ?>
       <!-- add here at the future to go admin panel -->
-      <a href = "PurpleAdmin-Free-Admin-Template-master/index.html">Go to template of admin panel
+      <a href = "Admin/sidebar.php">Go to template of admin panel
       </a>
     <?php } ?> <!-- close block -->
 
