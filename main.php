@@ -3,7 +3,7 @@
 <head>
   <meta charset = "UTF-8">
   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-  <title>Oleg</title>
+  <title>BeshBARmak</title>
 
   <!--для подключения других файлов-->
   <link rel="stylesheet" href="CSS.css">
@@ -16,32 +16,15 @@
 
 <main>
   <section class = "container">
+    
     <?php /*When user logined it show this admin panel*/
       session_start();
       if ($_SESSION['user']['Name'] == "Tima") {
     ?>
-    <div style = "display: flex; flex-direction: row;">
-      <button type = "button" class = "btn btn-primary w-75 m-2 bg-primary text-light" data-toggle = "modal" data-target = "#staticBackdrop">
-        CREATE
-      </button>
-      <!-- Modal -->
-      <?php require_once('modal-windows/modal-create.php'); ?>
-      
-
-      <!-- edit trigger -->
-      <button type = "button" class = "btn btn-primary w-75 m-2 bg-secondary text-light" data-toggle = "modal" data-target = "#staticBackdrop2" >
-        EDIT
-      </button>
-      <?php require_once('modal-windows/modal-edit.php'); ?>
-
-      <!-- delete trigger -->
-      <button type = "button" class = "btn btn-primary w-75 m-2 bg-danger text-light" data-toggle = "modal" data-target = "#staticBackdrop3">
-        DELETE
-      </button>
-      <?php require_once('modal-windows/modal-delete.php'); ?>
-      
-      <?php } ?> <!-- close block -->
-    </div><br><br>
+      <!-- add here at the future to go admin panel -->
+      <a href = "PurpleAdmin-Free-Admin-Template-master/index.html">Go to template of admin panel
+      </a>
+    <?php } ?> <!-- close block -->
 
     <div class = "row display-inlineblock">
         <div class = "col-md-12 col-sm-10 col-12 display-block">
