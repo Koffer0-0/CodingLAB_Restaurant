@@ -9,16 +9,16 @@
 
         private function setvar() { /*to connect our DB*/
             //For Local Host
-            // $this->host = 'localhost';
-            // $this->user ='root';
-            // $this->pass = 'root';
-            // $this->database = 'project';
+            $this->host = 'localhost';
+            $this->user ='root';
+            $this->pass = 'root';
+            $this->database = 'project';
 
-            // // For Remote Host
-            $this->host = 'eu-cdbr-west-01.cleardb.com';
-            $this->user = 'b791ecf6946e63';
-            $this->pass = 'fbcf8801';
-            $this->database = 'heroku_11219bb6d274632'
+            // For Remote Host
+            // $this->host = 'eu-cdbr-west-01.cleardb.com';
+            // $this->user = 'b791ecf6946e63';
+            // $this->pass = 'fbcf8801';
+            // $this->database = 'heroku_11219bb6d274632'
         }
 
         
