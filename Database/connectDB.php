@@ -1,7 +1,7 @@
 <?php 		/*procedural connection to DB*/
 	//For Local Host
 	$host = 'localhost';
-	$name = 'project';
+	$name = 'restaurant_codinglab';
 	$user = 'root';
 	$pass = 'root';
 

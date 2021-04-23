@@ -12,7 +12,7 @@
             $this->host = 'localhost';
             $this->user ='root';
             $this->pass = 'root';
-            $this->database = 'project';
+            $this->database = 'restaurant_codinglab';
 
             // For Remote Host
             // $this->host = 'eu-cdbr-west-01.cleardb.com';
