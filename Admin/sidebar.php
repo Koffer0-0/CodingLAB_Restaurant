@@ -1,17 +1,10 @@
 
-<nav>
-	<section class="btn-group">
-	  	<button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-	    Small button
-	  	</button>
-	  	<ul class="dropdown-menu">
-	    	...
-	  	</ul>
-	</section>
-	<section>
-		
-	</section>
-	<section>
-		
+<nav class = "sidebar collaspse" id = "navbarToggleExternalContent">
+	<img src = "https://www.autopartscentres.com/images/logo-downloads/apc_logo_solid.png" alt="" width = "220" height = "70px" class = "logo">
+	<section class = "btn-group m-2 d-flex flex-column">
+		<a href = "">Main menu</a>
+		<a href = "">Test</a>
+		<a href = "">blogs</a>
+		<a href = "">Errors</a>
 	</section>
 </nav>

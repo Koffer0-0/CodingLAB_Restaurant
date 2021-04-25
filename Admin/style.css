@@ -1,0 +1,37 @@
+
+
+body {
+    margin: 0;
+}
+
+div.side {
+	height: 1000px;
+	background-color: rgba(50, 123, 23, 0.8);
+}
+
+.head {
+	background-color: rgba(50, 44, 23, 0.8);
+}
+
+.logo {
+	margin-right: 30px;
+}
+
+nav.sidebar a {
+	margin-left: 20px;
+	padding-top: 10px;
+	text-decoration: none;
+	color: yellow;
+}
+
+section.block1 {
+	border: 2px solid grey;
+	border-radius: 5px;
+	background-color: white;
+}
+
+section.block2 {
+	border: 2px solid grey;
+	border-radius: 5px;
+	background-color: white;
+}
