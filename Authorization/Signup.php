@@ -17,7 +17,7 @@
             mysqli_query($connect, "INSERT INTO `Users` (`id`, `Name`, `email`, `Password`) VALUES (NULL, '$Name', '$email', '$password')");
 
             $_SESSION['message'] = 'Wellcome!';
-            header('Location: ./index.php');
+            header('Location: ../index.php');
 
 
         } else {
