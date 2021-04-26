@@ -6,11 +6,11 @@ body {
 
 div.side {
 	height: 1000px;
-	background-color: rgba(50, 123, 23, 0.8);
+	background-color: rgb(200, 190, 100);
 }
 
 .head {
-	background-color: rgba(50, 44, 23, 0.8);
+	background-color: rgb(245, 235, 195);
 }
 
 .logo {
@@ -21,7 +21,7 @@ nav.sidebar a {
 	margin-left: 20px;
 	padding-top: 10px;
 	text-decoration: none;
-	color: yellow;
+	color: rgb(240, 234, 223);
 }
 
 section.block1 {
@@ -34,4 +34,8 @@ section.block2 {
 	border: 2px solid grey;
 	border-radius: 5px;
 	background-color: white;
+}
+
+.footer {
+	background-color: rgb(178, 234, 223);
 }

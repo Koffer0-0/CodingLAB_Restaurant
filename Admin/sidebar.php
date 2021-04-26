@@ -5,6 +5,6 @@
 		<a href = "">Main menu</a>
 		<a href = "">Test</a>
 		<a href = "">blogs</a>
-		<a href = "">Errors</a>
+		<a href = "">Log out</a>
 	</section>
 </nav>
