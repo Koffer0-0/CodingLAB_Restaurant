@@ -3,7 +3,7 @@
 <title> Registration </title>
 <style>
     body {
-        background-color: rgba(128, 163, 100, 1.0);
+        background-color: rgba(125, 150, 110, 1.0);
     }
     main { 
         height: 80vh;

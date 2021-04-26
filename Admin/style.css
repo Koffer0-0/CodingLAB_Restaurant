@@ -1,41 +1,59 @@
 
-
 body {
     margin: 0;
 }
 
 div.side {
-	height: 1000px;
-	background-color: rgb(200, 190, 100);
+	height: 900px;
+	background-color: rgb(201, 215, 250);
 }
 
-.head {
-	background-color: rgb(245, 235, 195);
+.navbar {
+	background-color: rgb(201, 215, 250);
 }
 
-.logo {
-	margin-right: 30px;
+.logo img {
+	padding-left: 25px;	
+}
+
+.head, main {
+	background-color: rgb(230, 230, 230);
 }
 
 nav.sidebar a {
 	margin-left: 20px;
 	padding-top: 10px;
 	text-decoration: none;
-	color: rgb(240, 234, 223);
+	color: rgb(39, 17, 49);
 }
 
-section.block1 {
+section.block1, section.block2 {
 	border: 2px solid grey;
 	border-radius: 5px;
 	background-color: white;
+	height: 400px;
 }
 
-section.block2 {
+section.block3 {
 	border: 2px solid grey;
 	border-radius: 5px;
 	background-color: white;
+	height: 220px;
+	width: 1163px;
+	text-align: center;
 }
 
 .footer {
 	background-color: rgb(178, 234, 223);
+	height: 70px;
+	text-align: center;
+	padding-top: 3vh;
+}
+
+.row {
+	--bs-gutter-x: 0 !important;
+}
+
+nav.sidebar a:hover {
+	color: rgba(128, 17, 49, 0.9);
 }
