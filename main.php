@@ -65,9 +65,6 @@
 
 
 <!-- footer where coontain helpful information -->
-<footer class = "contact-form">
-          <?php require_once('parts/footer.php');?>
-</footer>
 
 <!-- SCRIPT ALWAYS MUST BE AFTER THE HTML CONTENT -->
 <!-- jQuery library -->

@@ -193,13 +193,13 @@
                     </div>
                 </div>
                 <div class="banquet_form_block">
-                    <form action="#" class="form_01">
+                    <form action = "Database/form.php" class = "form_01" method = "post">
                         <h2 class="form_title">ОСТАВИТЬ ЗАЯВКУ</h2>
-                        <input type="text" class="form_input" placeholder="Your name:">  
-                        <input type="text" class="form_input" placeholder="Your tel number:"> 
+                        <input type = "text" class = "form_input" placeholder = "Your name:" name = "name">  
+                        <input type = "text" class = "form_input" placeholder="Your tel number:" name = "tel_number"> 
                         <!-- Number \ name \ email \ amount of gostei \ type of event \ etc -->
-                        <button class="reservation">ОТПРАВИТЬ</button>
-                        </form>
+                        <button class = "reservation" type = "button" name = "ЗАЯВКА">ОТПРАВИТЬ</button>
+                    </form>
                 </div>
             </div>
         </div>
