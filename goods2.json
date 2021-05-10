@@ -1,0 +1,30 @@
+{
+  "101": {
+    "category":"italian",
+    "picture":"product_1.jpg",
+    "title":"Маргарита",
+    "price":2200,
+    "description":"Маргерита - это типичная неаполитанская пицца, приготовленная из помидоров Сан-Марцано, сыра моцарелла, свежего базилика, соли и оливкового масла первого отжима"
+  },
+  "102": {
+    "category":"spanish",
+    "picture":"product_7.jpg",
+    "title":"Samsa",
+    "price":5000,
+    "description":"Craft beer elit seitan exercitation photo booth et 8-bit kale chips."
+  },
+  "103": {
+    "category":"spanish italian",
+    "picture":"product_8.jpg",
+    "title":"Bolognese paste",
+    "price":3500,
+    "description":"Маргерита - это типичная неаполитанская пицца, приготовленная из помидоров Сан-Марцано, сыра моцарелла, свежего базилика, соли и оливкового масла первого отжима"
+  },
+  "104": {
+    "category":"spanish italian",
+    "picture":"product_2.jpg",
+    "title":"Макарони!",
+    "price":2300,
+    "description":"Макаро́нные изде́лия — изделия различной формы из высушенного теста, замешанного из пшеничной муки и воды."
+  }
+}

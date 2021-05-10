@@ -1,0 +1,72 @@
+
+
+
+
+.food-menu
+{ 
+    display: none;
+}
+.food-menu.active
+{ 
+    opacity: 0;
+    display: block!important;
+    animation: full-opacity-anim .3s forwards ;
+}
+
+@keyframes full-opacity-anim
+{
+        100%{ opacity: 1; }
+}
+
+.sided-90x 
+{ 
+    position: relative; 
+}
+
+.sided-90x .s-left 
+{ 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 90px; 
+    width: 90px; 
+}
+
+
+.sided-90x .s-right 
+{ 
+    margin-left: 115px; 
+    min-height: 90px; 
+}
+
+.sided-90x .s-right img
+{
+    height: 30px;
+    width: 30px;
+}
+.sided-90x .s-right>div
+{
+    display: flex;
+    justify-content: center;
+}
+img 
+{ 
+    width: 100%;
+}
+
+.menu > div > div.col-9 > .catalog
+{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+.mini-cart div > img
+{
+    height: 60px;
+    width: 60px;
+}
+.mini-cart
+{
+
+}
