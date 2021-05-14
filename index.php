@@ -12,17 +12,17 @@
 	<title>BeshBARmak</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<!-- MAXZONE -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="css/style.css">
+	<link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "css/reset.css">
+    <link rel = "stylesheet" href = "css/slick.css">
+    <link rel = "stylesheet" href = "css/jquery.fancybox.css">
+<!--     <link rel="stylesheet" type = "text/css" href = "slick/slick-theme.css"/> -->
+    <link rel = "stylesheet" href = "css/STyle.css">
 
 	<!--------------------------------------------------------------------------------------------------------------------->
 	<!--ЗОНА ДЛЯ ПОДКЛЮЧЕНИЯ CSS ФАЙЛОВ К ОСНОВНОЙ СТРАНИЦЕ-->
-   	<link rel="stylesheet" href="CSS/menuCSS.css">
+   	<link rel = "stylesheet" href = "css/menuCSS.css">
     <!--<link rel="stylesheet" href="TEST/test.css">-->
     
 	<!--------------------------------------------------------------------------------------------------------------------->
@@ -204,7 +204,7 @@
             </div>
         </div>
     </section>
-	<?php	require('parts/menu.php'); ?>
+	<?php require('parts/menu.php'); ?>
 <hr>
 
 
