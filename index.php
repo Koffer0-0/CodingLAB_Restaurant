@@ -41,7 +41,7 @@
                         <li class="menu_item"><a href="#" class="menu_list-link">Главное</a></li>
                         <li class="menu_item"><a href="#" class="menu_list-link">Меню</a></li>
                         <li class="menu_item"><a href="#" class="menu_list-link">Контакты</a></li>
-                        <li class="menu_item"><a href="#" class="menu_list-link">Админка</a></li>
+                        <li class="menu_item"><a href="Admin/index.php" class="menu_list-link">Админка</a></li>
                     </ul>
                 </nav>
                 <a class="tel" href="tel:777777777">+777777777</a>

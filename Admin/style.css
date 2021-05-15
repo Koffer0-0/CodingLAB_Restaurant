@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+.main {
+	display: flex;
+}
+
 div.side {
 	height: 900px;
 	background-color: rgb(201, 215, 250);
@@ -18,6 +22,19 @@ div.side {
 
 .head, main {
 	background-color: rgb(230, 230, 230);
+	transition: 0.6s;
+	position: relative;
+}
+
+.head-active { 
+	transform: translateX(-17%);
+	width: 100.4%;
+	overflow-x: hidden;
+}
+
+main {
+	text-align: center;
+	justify-content: center;
 }
 
 nav.sidebar a {
@@ -25,6 +42,15 @@ nav.sidebar a {
 	padding-top: 10px;
 	text-decoration: none;
 	color: rgb(39, 17, 49);
+}
+
+nav.sidebar a:hover {
+	color: rgba(128, 17, 49, 0.9);
+}
+
+.sidebar { 
+	position: sticky;
+	top: 0;
 }
 
 section.block1, section.block2 {
@@ -39,7 +65,6 @@ section.block3 {
 	border-radius: 5px;
 	background-color: white;
 	height: 220px;
-	width: 1163px;
 	text-align: center;
 }
 
@@ -48,12 +73,25 @@ section.block3 {
 	height: 70px;
 	text-align: center;
 	padding-top: 3vh;
+	width: 116.7%;
+}
+
+.footer-active {
+	width: 100%;
+	transition: 0.6s;
 }
 
 .row {
 	--bs-gutter-x: 0 !important;
 }
 
-nav.sidebar a:hover {
-	color: rgba(128, 17, 49, 0.9);
+.side {
+	transition: 0.6s;
+	transform: translateX(0%);
 }
+
+.side-active {
+	transform: translateX(-100%);
+}
+
+a.btn-lol { position: absolute; left: 20px; }
