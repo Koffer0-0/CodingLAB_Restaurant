@@ -1,6 +1,4 @@
 <?php
-	session_start();
-
 	if ($_SESSION['user']) {
 	    header('Location: ../index.php');
 	}
@@ -36,11 +34,11 @@
 	<div class = "container">
 			<section>
 			<form action = "SignIn.php" method = "post">
-				<label for = "Login">Login:</label>
-				<input type = "text" name = "Login" id = "Login" class = "form-control" placeholder = "Write your login">
+				<label for = "Name">Login:</label>
+				<input type = "text" name = "Name" value = "<?php echo @$data['Name']; ?>" id = "Name" class = "form-control" placeholder = "Write your login">
 				
 				<label for = "Password">Password:</label>
-				<input type = "Password" name = "Password" id = "Password" class = "form-control" placeholder = "Password">
+				<input type = "Password" name = "Password" value = "<?php echo @$data['Password']; ?>" id = "Password" class = "form-control" placeholder = "Password">
 
 				<button class = "form-control bg-success text-light" name = "log">Sign in</button>
 			</form>
@@ -49,7 +47,7 @@
 		            New user? <a href = "registration.php">Sign up</a>!
 		        </p>
 				<?php
-		                echo '<p class = "msg"> '.$_SESSION['message'] .'</p>';
+		            echo '<p class = "msg"> '.$_SESSION['message'] .'</p>';
 	
 		            unset($_SESSION['message']);
 		        ?>	

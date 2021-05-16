@@ -1,22 +1,10 @@
 <?php 		/*procedural connection to DB*/
-	//For Local Host
-	$host = 'localhost';
-	$database = 'restaurant_codinglab';
-	$user = 'root';
-	$pass = 'root';
+require ('libs/rb.php');
+R::setup( 'mysql:host=127.0.0.1;dbname=restaurant_codinglab','root', 'root' ); 
 
-	//For Remote Host
-	// $host = 'eu-cdbr-west-01.cleardb.com';
-	// $name = 'heroku_11219bb6d274632';
-	// $user = 'b791ecf6946e63';
-	// $pass = 'fbcf8801';
+if ( !R::testconnection() )
+{
+		exit ('Connection ERROR');
+}
 
-
-	$connect = mysqli_connect($host, $user, $pass, $database);	/*connect with build-in function*/
-
-	if (mysqli_connect_error()) {	/*check for errors(connection)*/
-		echo mysqli_connect_error();	
-	} else {
-		// successful connection!
-	}
-?>
+session_start();
