@@ -20,8 +20,12 @@
                 "Name" => $user['Name'],
                 "email" => $user['email']
             ];
-
-            header('Location: ../index.php');
+            if ($_SESSION['user']['Name'] == "Tima") {
+                header('Location: ../Admin/index.php');
+            } else {
+                header('Location: ../index.php');
+            }
+            
 
         } else {
             $_SESSION['message'] = 'Login or password are inccorect!';

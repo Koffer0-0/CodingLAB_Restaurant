@@ -28,7 +28,6 @@
 	<!--------------------------------------------------------------------------------------------------------------------->
 </head>
 
-
 <body>
 	<header>
         <div class="container">
@@ -41,10 +40,27 @@
                         <li class="menu_item"><a href="#" class="menu_list-link">Главное</a></li>
                         <li class="menu_item"><a href="#" class="menu_list-link">Меню</a></li>
                         <li class="menu_item"><a href="#" class="menu_list-link">Контакты</a></li>
-                        <li class="menu_item"><a href="Admin/index.php" class="menu_list-link">Админка</a></li>
+                        <?php
+                            session_start();
+                            if ($_SESSION['user']) {
+                                echo '<li class="menu_item"><a href="Authorization/logOut.php" class="menu_list-link">Выйти</a></li>';
+                            } else {
+                        ?>
+                        <li class="menu_item"><a href="Authorization/loginpanel.php" class="menu_list-link">Авторизация</a></li>
+                        <?php } ?>
                     </ul>
                 </nav>
                 <a class="tel" href="tel:777777777">+777777777</a>
+                <span>
+                    <?php
+                    
+                    $_SESSION['message'] = 'Wellcome!';
+                    $Chel = $_SESSION['user']['Name'];
+                    if ($_SESSION['user']) {
+                        echo '<p class = "msg"> '.$_SESSION['message'].' '.$Chel.'</p>';
+
+                    } ?>
+                </span>
             </div>
         </div>
     </header>

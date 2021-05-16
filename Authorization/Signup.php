@@ -18,8 +18,7 @@
 
             $_SESSION['message'] = 'Wellcome!';
             header('Location: ../index.php');
-
-
+            
         } else {
             $_SESSION['message'] = 'Passwords are different!';
             header('Location: registration.php');

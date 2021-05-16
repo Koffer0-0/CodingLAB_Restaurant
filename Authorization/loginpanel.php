@@ -49,9 +49,8 @@
 		            New user? <a href = "registration.php">Sign up</a>!
 		        </p>
 				<?php
-		            if ($_SESSION['message']) {
 		                echo '<p class = "msg"> '.$_SESSION['message'] .'</p>';
-		            }
+	
 		            unset($_SESSION['message']);
 		        ?>	
 			</div>
