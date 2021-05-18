@@ -209,12 +209,12 @@
                     </div>
                 </div>
                 <div class="banquet_form_block">
-                    <form action = "Database/form.php" class = "form_01" method = "post">
+                    <form action = "Database/send.php" class = "form_01" method = "post">
                         <h2 class="form_title">ОСТАВИТЬ ЗАЯВКУ</h2>
                         <input type = "text" class = "form_input" placeholder = "Your name:" name = "name">  
                         <input type = "text" class = "form_input" placeholder="Your tel number:" name = "tel_number"> 
                         <!-- Number \ name \ email \ amount of gostei \ type of event \ etc -->
-                        <button class = "reservation" type = "button" name = "ЗАЯВКА">ОТПРАВИТЬ</button>
+                        <button class = "reservation" type = "submit" name = "ЗАЯВКА">ОТПРАВИТЬ</button>
                     </form>
                 </div>
             </div>
