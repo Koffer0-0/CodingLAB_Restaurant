@@ -66,6 +66,7 @@
         if ($_SESSION['captcha'] != array_search(mb_strtolower($_POST['captcha']), $answers)) {
             $errors[] = 'CAPTCHA IS INCORRECT!';
         }
+        
         if (empty($errors)) {
             //ошибок нет, теперь регистрируем
             $user = R::dispense('users');
