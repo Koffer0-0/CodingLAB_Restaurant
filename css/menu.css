@@ -1,0 +1,167 @@
+/********************************выбор категорий********************************************/
+.menuCatalog
+{
+    justify-content:space-around;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+/****************************класс дающий прокрутку в меню**********************************************/
+.menuScroll
+{   
+    height: 450px;
+    background-color: lightgreen;
+    overflow-y: scroll;
+}
+.menuScroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.menuScroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/*****************************************ксс для продуктов в меню**************************/
+.menuProduct
+{
+    display: flex;
+    justify-content:space-around;
+    margin: 0px;
+    padding: 0px;
+    height: 150px;
+}
+.menuRight > p:nth-child(2)
+{
+    height: 72px;
+}
+.menuRight
+{
+    height: 150px;
+    width: 400px;
+}
+.menuRight p
+{
+    margin-bottom: 0px; 
+}
+.menuLeft
+{
+    margin-right:-10px; 
+    height: 130px;
+    width: 130px;
+}
+.menuLeft img
+{
+    border-radius:20px;
+    width: 100%;
+    height: 100%;
+}
+.add-to-cart
+{
+    height: 25px;
+    width: 25px;
+}
+.delete-to-cart
+{
+    height: 25px;
+    width: 25px;
+}
+
+/************************************************кнопка заказать**********************************************/
+.menuOrder
+{
+    justify-content:center;
+    align-items: center;
+    height: 50px;
+}
+
+
+
+/*******************************************************************************************************************************/
+
+
+
+
+/************************************************надпись ВАША КОРИЗИНА***********************************************/
+.basketLegend 
+{
+    justify-content: center;
+    align-items: flex-end;
+    height: 89px;
+}
+.basketLegend img
+{
+    height: 20px;
+    width: 20px;
+}
+
+/*************************менюшка корзины с товарами вместе с css для продуктов в ней*****************************************/
+.basketCart
+{
+    height: 402px;
+    display: block;
+}
+.basketProduct
+{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    height: 80px;
+    background-color: lightgreen;
+    width: 100%;
+    
+}
+.basketLeft
+{
+    margin-right:0px; 
+    height: 70px;
+    width: 70px;
+}
+.basketLeft img
+{
+    border-radius:10px;
+    width: 100%;
+    height: 100%;
+}
+.basketRight
+{
+    height: 70px;
+    width: 285px;
+}
+.basketRight p
+{
+    margin-bottom: 7px; 
+}
+.basketRight img
+{
+    height: 20px;
+    width: 20px;
+}
+/* *************************************ксс для scroll в basket******************* */
+.mini-cart {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll; /* Add the ability to scroll */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.mini-cart::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.mini-cart {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/**************************класс для надпиши ВАС СЧЕТ к оплате*************************/
+.basketBill
+{
+
+}
+
+

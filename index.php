@@ -10,7 +10,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>BeshBARmak</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<!-- MAXZONE -->
 	<link rel = "preconnect" href = "https://fonts.gstatic.com">
     <link href = "https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
@@ -20,10 +27,8 @@
 <!--     <link rel="stylesheet" type = "text/css" href = "slick/slick-theme.css"/> -->
     <link rel = "stylesheet" href = "css/STyle.css">
 
-	<!--------------------------------------------------------------------------------------------------------------------->
-	<!--ЗОНА ДЛЯ ПОДКЛЮЧЕНИЯ CSS ФАЙЛОВ К ОСНОВНОЙ СТРАНИЦЕ-->
-   	<link rel = "stylesheet" href = "css/menuCSS.css">
-    <!--<link rel="stylesheet" href="TEST/test.css">-->
+	<!--ЗОНА ДЛЯ ПОДКЛЮЧЕНИЯ CSS ФАЙЛОВ К ОСНОВНОЙ СТРАНИЦЕ---------------------------------------------------------------->
+   	<link rel = "stylesheet" href = "css/menu.css">
     
 	<!--------------------------------------------------------------------------------------------------------------------->
 </head>
@@ -226,21 +231,16 @@
 
 <!--------------------------------------------------------------------------------------------------------------------->
 <!--ЗОНА ДЛЯ ПОДКЛЮЧЕНИЯ JAVASCRIPT ФАЙЛОВ К ОСНОВНОЙ СТРАНИЦЕ-->
-<script src="js/Sanzhar_main.js"></script>
-<script src="js/categoryJS.js"></script>
-<!-- SANZHZONE -->
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/menuCategory.js"></script>
+<script src="js/menuBusket.js"></script>
+
+
+
 <!-- MAXZONE -->
     <script src = "js/jquery.fancybox.min.js"></script>
     <script src = "js/slick.min.js"></script>
     <script src = "js/Max_main.js"></script>
-<!--<script src="TEST/testCategory.js"></script>-->
-<!--<script src="TEST/testMain.js"></script>-->
+
 
 </body>
 </html>
