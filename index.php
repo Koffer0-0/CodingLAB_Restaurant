@@ -34,7 +34,6 @@
 </head>
 
 <body>
-    hello sanzhar
 	<header>
         <div class="container">
             <div class="header_inner">
