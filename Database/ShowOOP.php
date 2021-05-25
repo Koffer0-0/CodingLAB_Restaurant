@@ -1,7 +1,10 @@
 <?php
     require_once('connectOOP.php'); /*import connection to DB*/
 
-    class Show extends Connection{  /*create class of "show"*/
+    class
+
+
+    Show extends Connection{  /*create class of "show"*/
         private $connection;
         private $sql;
 

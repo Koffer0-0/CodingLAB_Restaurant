@@ -48,7 +48,7 @@
       for ($i = 0; $i < count($reciepe); $i++) { /*begin loop*/
       
         echo '<div class = "col-md-6 food-menu '.$reciepe[$i][6].'">';
-               ?> <div class="sided-90x mb-30 ">
+        ?> <div class="sided-90x mb-30 ">
                         <div class="s-left"><?php echo '<img class="br-3" alt = "Menu Image" src = "images/'.$reciepe[$i][4].'">'?></div><!--s-left-->
                         <div class="s-right">
                             <h5 class="mb-10"><b><?php echo $reciepe[$i][1]; ?></b><b class="color-primary float-right"><?php echo $reciepe[$i][5]; ?> tg</b></h5> 

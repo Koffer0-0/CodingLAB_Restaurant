@@ -1,7 +1,10 @@
 var cart = {}; // корзина продуктов
 function init() {
     //вычитуем файл goods.json и закидывает в фунцию гудсаут
-    $.getJSON("test.json", goodsOut);
+    // $.getJSON("test.json", goodsOut);
+    $.post {
+        "Database/"
+    }
 }
 function goodsOut(data) {
     // вывод на страницу
