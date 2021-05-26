@@ -1,15 +1,20 @@
 var cart = {}; // корзина продуктов
 function init() {
     //вычитуем файл goods.json и закидывает в фунцию гудсаут
-    // $.getJSON("test.json", goodsOut);
-    $.post {
-        "Database/"
-    }
+    $.getJSON("test.json", goodsOut);
+    /*$.post(
+        "js/core.php",
+        {
+            "action" : "loadGoods"
+        },
+        goodsOut()
+    ); */
 }
+
 function goodsOut(data) {
     // вывод на страницу
-    console.log(data);
-    var out='';
+    // data = JSON.parse(data);
+    var out = '';
     for (var key in data) 
     {
         out+=`<div class="col-6 menuProduct" data-category="${data[key].category}" >`;
@@ -101,5 +106,4 @@ function loadCart() {
 $(document).ready(function () {
     init();
     loadCart();
-    
 });
