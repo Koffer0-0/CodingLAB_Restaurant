@@ -1,6 +1,5 @@
-
 body {
-    margin: 0;
+	margin: 0;
 }
 
 .main {
@@ -17,7 +16,7 @@ div.side {
 }
 
 .logo img {
-	padding-left: 25px;	
+	padding-left: 25px;
 }
 
 .head, main {
@@ -26,15 +25,10 @@ div.side {
 	position: relative;
 }
 
-.head-active { 
+.head-active {
 	transform: translateX(-17%);
 	width: 100.4%;
 	overflow-x: hidden;
-}
-
-main {
-	text-align: center;
-	justify-content: center;
 }
 
 nav.sidebar a {
@@ -48,7 +42,7 @@ nav.sidebar a:hover {
 	color: rgba(128, 17, 49, 0.9);
 }
 
-.sidebar { 
+.sidebar {
 	position: sticky;
 	top: 0;
 }
@@ -95,3 +89,15 @@ section.block3 {
 }
 
 a.btn-lol { position: absolute; left: 20px; }
+
+section.item {
+	border: 1px solid #0e6c5e;
+	justify-content: left;
+}
+.item2 {
+	justify-content: space-between;
+}
+button.add {background-color: #0e6c5e; color: #fcffdc; }
+button.change {background-color: #ff8936; color: #fcffdc; }
+button.delete {background-color: #ff4166; color: #fcffdc; }
+.buttons {display: flex; justify-content: right;}
