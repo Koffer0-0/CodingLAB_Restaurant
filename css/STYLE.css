@@ -1,0 +1,104 @@
+
+body {
+    margin: 0;
+}
+
+.main {
+	display: flex;
+}
+
+div.side {
+	height: 900px;
+	background-color: rgb(201, 215, 250);
+}
+
+.navbar {
+	background-color: rgb(201, 215, 250);
+}
+
+.logo img {
+	padding-left: 25px;	
+}
+
+.head, main {
+	background-color: rgb(230, 230, 230);
+	transition: 0.6s;
+	position: relative;
+}
+
+.head-active { 
+	transform: translateX(-17%);
+	width: 100.4%;
+	overflow-x: hidden;
+}
+
+nav.sidebar a {
+	margin-left: 20px;
+	padding-top: 10px;
+	text-decoration: none;
+	color: rgb(39, 17, 49);
+}
+
+nav.sidebar a:hover {
+	color: rgba(128, 17, 49, 0.9);
+}
+
+.sidebar { 
+	position: sticky;
+	top: 0;
+}
+
+section.block1, section.block2 {
+	border: 2px solid grey;
+	border-radius: 5px;
+	background-color: white;
+	height: 400px;
+}
+
+section.block3 {
+	border: 2px solid grey;
+	border-radius: 5px;
+	background-color: white;
+	height: 220px;
+	text-align: center;
+}
+
+.footer {
+	background-color: rgb(178, 234, 223);
+	height: 70px;
+	text-align: center;
+	padding-top: 3vh;
+	width: 116.7%;
+}
+
+.footer-active {
+	width: 100%;
+	transition: 0.6s;
+}
+
+.row {
+	--bs-gutter-x: 0 !important;
+}
+
+.side {
+	transition: 0.6s;
+	transform: translateX(0%);
+}
+
+.side-active {
+	transform: translateX(-100%);
+}
+
+a.btn-lol { position: absolute; left: 20px; }
+
+section.item {
+	border: 1px solid #0e6c5e;
+	justify-content: left;
+}
+.item2 {
+	justify-content: space-between;
+}
+button.add {background-color: #0e6c5e; color: #fcffdc; }
+button.change {background-color: #ff8936; color: #fcffdc; }
+button.delete {background-color: #ff4166; color: #fcffdc; }
+.buttons {display: flex; justify-content: right;}
