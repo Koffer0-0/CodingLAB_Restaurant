@@ -54,6 +54,9 @@ section.block1, section.block2 {
 	height: 400px;
 }
 
+section.block2 {
+	display: block;
+}
 section.block3 {
 	border: 2px solid grey;
 	border-radius: 5px;

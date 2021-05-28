@@ -16,7 +16,18 @@
      <?php } ?>
     </section>
     <section class = "block2 col-md-4 col-sm-12 p-2 m-md-2 m-sm-2">
-        some text must be here
+        <select name="" id="" class = "form-control">
+            <option value=""></option>
+        </select>
+
+        <label for="">Category</label><input type = "text" class = "form-control">
+        <label for="">Picture</label><input type = "text" class = "form-control">
+        <label for="">Title</label><input type = "text" class = "form-control">
+        <label for="">Price</label><input type = "text" class = "form-control">
+        <label for="">Description</label><input type = "text" class = "form-control">
+        <button class = "add btn" type = "button">Add</button>
+        <button class = "change btn" type = "button">Change</button>
+        <button class = "delete btn" type = "button">Delete</button>
     </section>
     <section class = "block3 col-md-11 col-sm-12 p-2 m-md-3 m-sm-2">
     	just block tupo 
