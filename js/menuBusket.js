@@ -1,19 +1,19 @@
 var cart = {}; // корзина продуктов
 function init() {
     //вычитуем файл goods.json и закидывает в фунцию гудсаут
-    $.getJSON("test.json", goodsOut);
-    /*$.post(
-        "js/core.php",
+    // $.getJSON("test.json", goodsOut);
+    $.post(
+        "admin/core.php",
         {
             "action" : "loadGoods"
         },
         goodsOut()
-    ); */
+    );
 }
 
 function goodsOut(data) {
     // вывод на страницу
-    // data = JSON.parse(data);
+    data = JSON.parse(data);
     var out = '';
     for (var key in data) 
     {

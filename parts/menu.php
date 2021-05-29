@@ -14,6 +14,20 @@
                   </div>
 
                   <div class = "row menuScroll goods-out" >
+                      <?php
+                      $query = R::getAssoc('SELECT * FROM recieps');;
+                      echo $query;
+                      foreach($query as $item):
+                      ?>
+                      <tr>
+                          <td><?=$item['id']?></td>
+                          <td><?=$item['Category']?></td>
+                          <td><?=$item['Picture']?></td>
+                          <td><?=$item['Title']?></td>
+                          <td><?=$item['Price']?></td>
+                          <td><?=$item['Description']?></td>
+                      </tr>
+                      <?php endforeach;  ?>
                   </div>
 
 
