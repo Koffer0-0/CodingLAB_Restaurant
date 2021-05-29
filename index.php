@@ -38,7 +38,7 @@
         <div class="container">
             <div class="header_inner">
                 <a class="logo" href="#">
-                    <img class="logo_logo" src="C:\Users\marat\Desktop\project__lab\images\logo.png" alt="logo">
+                    <img class="logo_logo" src="images\logo.png" alt="logo">
                 </a>
                 <nav class="menu">
                     <button class="menu_btn"></button>
@@ -236,7 +236,7 @@
         <div class="container">
             <div class="footer_top">
                 <a class="logo" href="#">
-                    <img class="logo_logo" src="C:\Users\marat\Desktop\project__lab\images\logo.png" alt="logo">
+                    <img class="logo_logo" src="images\logo.png" alt="logo">
                 </a>
                 <nav class="menu">
                     <ul class="menu_list">
