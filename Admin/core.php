@@ -8,4 +8,7 @@ switch ($action) {
     case 'loadGoods':
         loadGoods();
         break;
+    case 'selectOneGoods':
+        selectOneGoods();
+        break;
 }

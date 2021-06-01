@@ -15,21 +15,23 @@
 
      <?php } ?>
     </section>
-    <section class = "block2 col-md-4 col-sm-12 p-2 m-md-2 m-sm-2">
-        <select name="" id="" class = "form-control">
-            <option value=""></option>
-        </select>
+    <section class = "block2  col-md-4 col-sm-12 p-2 m-md-2 m-sm-2">
+    <div class = "goods-out">
 
-        <label for="">Category</label><input type = "text" class = "form-control">
-        <label for="">Picture</label><input type = "text" class = "form-control">
-        <label for="">Title</label><input type = "text" class = "form-control">
-        <label for="">Price</label><input type = "text" class = "form-control">
-        <label for="">Description</label><input type = "text" class = "form-control">
+    </div>
+        <label for="">Category</label><input type = "text" class = "form-control" id = "category" value = "">
+        <label for="">Picture</label><input type = "text" class = "form-control" id = "pic" value = "">
+        <label for="">Title</label><input type = "text" class = "form-control" id = "title" value = "">
+        <label for="">Price</label><input type = "text" class = "form-control" id = "price" value = "">
+        <label for="">Description</label><input type = "text" class = "form-control" id = "descr" value = "">
+        <input type="hidden" id = "gid">
         <button class = "add btn" type = "button">Add</button>
         <button class = "change btn" type = "button">Change</button>
         <button class = "delete btn" type = "button">Delete</button>
     </section>
     <section class = "block3 col-md-11 col-sm-12 p-2 m-md-3 m-sm-2">
-    	just block tupo 
+    	just block tupo
     </section>
 </main>
+
+<script> src = "admin.js"</script>
