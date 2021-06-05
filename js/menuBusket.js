@@ -17,7 +17,7 @@ function goodsOut(data) {
     var out = '';
     for (var key in data) 
     {
-        out+=`<div class="col-6 menuProduct" data-category="${data[key].category}" >`;
+        out+=`<div class="col-6 menuProduct align-items-start" data-category="${data[key].category}" >`;
         out+=`<div class="menuLeft"><img src="images/${data[key].picture}"></div>`;
         out+=`<div class="menuRight">`;
         out+=`<p>${data[key].title}<b style="float: right;">${data[key].price} tg</b></p>`;
@@ -95,9 +95,55 @@ function minusToCart(){
     showMiniCart();
     saveCart();
 }
+
+function isEmpty(object) {
+    //проверка корзины на пустоту
+    for (var key in object)
+    if (object.hasOwnProperty(key)) return true;
+    return false;
+}
+function sendEmail() {
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var phone = $('#phone').val();
+    if (name=='' || email=='' || phone=='') 
+    {
+        alert('Заполните поля');
+    }
+    else 
+    {
+        if (!isEmpty(cart)) 
+        {
+            alert('Корзина пуста');            
+        }
+        else 
+        {
+            $.post(
+                "core/mail.php",
+                {
+                    "name" : name,
+                    "email" : email,
+                    "phone" : phone,
+                    "cart" : cart
+                },
+                function(data){
+                    //console.log(data);
+                    if (data==1) {
+                        alert('Заказ отправлен');
+                    }
+                    else {
+                        alert('Ошибка не получилось отправить');
+                    }
+                }
+            );
+        }
+    }
+
+}
 $(document).ready(function () {
     init();
     loadCart();
+    $('.menuSendModal').on('click',sendEmail);
 });
 function saveCart() {
     //сохраняю корзину в localStorage
