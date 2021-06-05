@@ -26,10 +26,9 @@
             $this->setvar();
 
             $this->conn = new mysqli($this->host,$this->user,$this->pass,$this->database);  
-
+            mysqli_set_charset($this->conn, "utf8");
             if (mysqli_connect_error()) {     /*checking for errors(connection)*/           
                 return null;
-
             } else {
                 return $this->conn;
             }

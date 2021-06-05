@@ -15,19 +15,18 @@
 
      <?php } ?>
     </section>
-    <section class = "block2  col-md-4 col-sm-12 p-2 m-md-2 m-sm-2">
-    <div class = "goods-out">
 
-    </div>
+    <section class = "block2  col-md-4 col-sm-12 p-2 m-md-2 m-sm-2">
+        <div class = "goods-out"></div>
         <label for="">Category</label><input type = "text" class = "form-control" id = "category" value = "">
         <label for="">Picture</label><input type = "text" class = "form-control" id = "pic" value = "">
         <label for="">Title</label><input type = "text" class = "form-control" id = "title" value = "">
         <label for="">Price</label><input type = "text" class = "form-control" id = "price" value = "">
         <label for="">Description</label><input type = "text" class = "form-control" id = "descr" value = "">
-        <input type="hidden" id = "gid">
-        <button class = "add btn" type = "button">Add</button>
-        <button class = "change btn" type = "button">Change</button>
-        <button class = "delete btn" type = "button">Delete</button>
+        <input type = "hidden" id = "gid">
+        <button class = "add btn" type="button">Add</button>
+        <button class = "change btn">Change</button>
+        <button class = "delete btn">Delete</button>
     </section>
     <section class = "block3 col-md-11 col-sm-12 p-2 m-md-3 m-sm-2">
     	just block tupo

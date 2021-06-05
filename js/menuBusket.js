@@ -27,7 +27,7 @@ function goodsOut(data) {
         out+=`<button><img class="delete-to-cart" data-id="${key}" src="images/trush.png"></button>`;
         out+=`</div></div></div>`;
     }
-    $('.goods-out').html(out);//все это вывожу на страницу
+    $('.goods-out-main').html(out);//все это вывожу на страницу
     $('.add-to-cart').on('click', addToCart);
     $('.delete-to-cart').on('click', deleteToCart);
 }
