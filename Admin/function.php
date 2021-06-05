@@ -47,7 +47,9 @@ function updateGoods() {
     $price = $_POST['price'];
     $descr = $_POST['descr'];
 
-    $sql = "UPDATE `recieps` SET `Category`='".$category."',`Picrutes`='".$pic."',`Title`='".$title."',`Price`='".$price."', `Description`='".$descr."'WHERE `id`='".$id."'";
+    $sql = "UPDATE `recieps` SET `Category`='".$category."'
+                  ,`Pictures`='".$pic."',`Title`='".$title."'
+                  ,`Price`='".$price."', `Description`='".$descr."'WHERE `id`='".$id."'";
     if (mysqli_query($conn, $sql)) {
         echo "success!";
     } else {

@@ -18,13 +18,13 @@
 
     <section class = "block2  col-md-4 col-sm-12 p-2 m-md-2 m-sm-2">
         <div class = "goods-out"></div>
-        <label for="">Category</label><input type = "text" class = "form-control" id = "category" value = "">
-        <label for="">Picture</label><input type = "text" class = "form-control" id = "pic" value = "">
-        <label for="">Title</label><input type = "text" class = "form-control" id = "title" value = "">
-        <label for="">Price</label><input type = "text" class = "form-control" id = "price" value = "">
-        <label for="">Description</label><input type = "text" class = "form-control" id = "descr" value = "">
+        <label for="">Category</label><input type = "text" class = "form-control" id = "category">
+        <label for="">Picture</label><input type = "text" class = "form-control" id = "pic">
+        <label for="">Title</label><input type = "text" class = "form-control" id = "title">
+        <label for="">Price</label><input type = "text" class = "form-control" id = "price">
+        <label for="">Description</label><input type = "text" class = "form-control" id = "descr">
         <input type = "hidden" id = "gid">
-        <button class = "add btn" type="button">Add</button>
+        <button class = "add btn" type="submit">Add</button>
         <button class = "change btn">Change</button>
         <button class = "delete btn">Delete</button>
     </section>
