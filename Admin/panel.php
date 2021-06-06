@@ -24,6 +24,7 @@
         <label for="">Price</label><input type = "text" class = "form-control" id = "price">
         <label for="">Description</label><input type = "text" class = "form-control" id = "descr">
         <input type = "hidden" id = "gid">
+        <br>
         <button class = "add btn" onclick='window.location.reload(true)'>Add</button>
         <button class = "delete btn" onclick='window.location.reload(true)'>Delete</button>
     </section>

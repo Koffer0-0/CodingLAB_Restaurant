@@ -1,5 +1,7 @@
 body {
 	margin: 0;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 18px;
 }
 
 .main {
@@ -46,7 +48,9 @@ nav.sidebar a:hover {
 	position: sticky;
 	top: 0;
 }
-
+section.block1 {
+	text-align: center;
+}
 section.block1, section.block2 {
 	border: 2px solid grey;
 	border-radius: 5px;
