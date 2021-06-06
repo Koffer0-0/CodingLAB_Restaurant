@@ -28,7 +28,7 @@
         <button class = "delete btn" onclick='window.location.reload(true)'>Delete</button>
     </section>
     <section class = "block3 col-md-11 col-sm-12 p-2 m-md-3 m-sm-2">
-    	just block tupo
+
     </section>
 </main>
 
