@@ -14,4 +14,10 @@ switch ($action) {
     case 'updateGoods':
         updateGoods();
         break;
+    case 'newGoods':
+        newGoods();
+        break;
+    case 'deleteGoods':
+        deleteGoods();
+        break;
 }

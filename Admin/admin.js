@@ -12,7 +12,7 @@ function init() {
 function showGoods(data) {
     data = JSON.parse(data);
     var out='<select class = "form-control">';
-    out +='<option data-id="0">Choose item</option>';
+    out +='<option data-id="0">New item</option>';
     for (var id in data) {
         out +=`<option data-id="${id}">${data[id].Title}</option>`;
     }
@@ -36,16 +36,16 @@ function selectGood() {
             $('#title').val(data.Title);
             $('#price').val(data.Price);
             $('#descr').val(data.Description);
-            $('#gid').val(data.id);
+            $('#gid').val(data.id)
         }
     )
 }
 
 function changeDB() {
     var id = $('#gid').val();
-    if (id != undefined) {
+    if (id != "") {
         $.post (
-            "core.php", {
+            "core.php",     {
                 "action" : "updateGoods",
                 "id" : id,
                 "category" : $('#category').val(),
@@ -56,6 +56,27 @@ function changeDB() {
             },
             function (data) {
                 if (data == 1) {
+                    alert();
+                    init();
+                } else {
+                    console.log(data);
+                }
+            }
+        );
+    } else {
+        $.post (
+            "core.php",     {
+                "action" : "newGoods",
+                "id" : 0,
+                "category" : $('#category').val(),
+                "pic" : $('#pic').val(),
+                "title" : $('#title').val(),
+                "price" : $('#price').val(),
+                "descr" : $('#descr').val()
+            },
+            function (data) {
+                if (data == 1) {
+                    alert();
                     init();
                 } else {
                     console.log(data);
@@ -64,8 +85,32 @@ function changeDB() {
         );
     }
 }
-
+function deleteGood() {
+    var id = $('#gid').val();
+    if (id != "") {
+        $.post(
+            "core.php", {
+                "action": "deleteGoods",
+                "id": id,
+                "category": $('#category').val(),
+                "pic": $('#pic').val(),
+                "title": $('#title').val(),
+                "price": $('#price').val(),
+                "descr": $('#descr').val()
+            },
+            function (data) {
+                if (data == 1) {
+                    alert();
+                    init();
+                } else {
+                    console.log(data);
+                }
+            }
+        );
+    }
+}
 $(document).ready(function () {
     init();
     $('.add').on('click', changeDB);
+    $('.delete').on('click', deleteGood);
 });

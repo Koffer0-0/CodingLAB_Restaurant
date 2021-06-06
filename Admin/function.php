@@ -43,15 +43,46 @@ function updateGoods() {
     $id = $_POST['id'];
     $category = $_POST['category'];
     $pic = $_POST['pic'];
-    $title = $_POST['title9'];
+    $title = $_POST['title'];
     $price = $_POST['price'];
     $descr = $_POST['descr'];
 
-    $sql = "UPDATE `recieps` SET `Category`='".$category."'
-                  ,`Pictures`='".$pic."',`Title`='".$title."'
-                  ,`Price`='".$price."', `Description`='".$descr."'WHERE `id`='".$id."'";
+    $sql = "UPDATE recieps SET Category = '$category',Picture = '$pic',Title = '$title',Price = '$price', Description = '$descr' WHERE id = '$id'";
     if (mysqli_query($conn, $sql)) {
         echo "success!";
+    } else {
+        echo "error";
+    }
+    mysqli_close($conn);
+}
+
+function newGoods() {
+    $obj = new Show();
+    $conn = $obj->connect();
+    $category = $_POST['category'];
+    $pic = $_POST['pic'];
+    $title = $_POST['title'];
+    $price = $_POST['price'];
+    $descr = $_POST['descr'];
+
+    $sql = "INSERT INTO recieps(Category, Picture, Title, Price, Description) 
+            VALUES ('$category','$pic','$title','$price','$descr')";
+    if (mysqli_query($conn, $sql)) {
+        echo "success adding!";
+    } else {
+        echo "error";
+    }
+    mysqli_close($conn);
+}
+
+function deleteGoods() {
+    $obj = new Show();
+    $conn = $obj->connect();
+    $id = $_POST['id'];
+        
+    $sql = "DELETE FROM recieps WHERE id = '$id'";
+    if (mysqli_query($conn, $sql)) {
+        echo "success deleted!";
     } else {
         echo "error";
     }

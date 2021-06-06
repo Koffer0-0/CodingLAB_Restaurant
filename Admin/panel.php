@@ -24,9 +24,8 @@
         <label for="">Price</label><input type = "text" class = "form-control" id = "price">
         <label for="">Description</label><input type = "text" class = "form-control" id = "descr">
         <input type = "hidden" id = "gid">
-        <button class = "add btn" type="submit">Add</button>
-        <button class = "change btn">Change</button>
-        <button class = "delete btn">Delete</button>
+        <button class = "add btn" onclick='window.location.reload(true)'>Add</button>
+        <button class = "delete btn" onclick='window.location.reload(true)'>Delete</button>
     </section>
     <section class = "block3 col-md-11 col-sm-12 p-2 m-md-3 m-sm-2">
     	just block tupo
