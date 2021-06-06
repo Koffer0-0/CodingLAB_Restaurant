@@ -21,17 +21,17 @@ foreach ($cart as $id=>$count) {
 }
 $message .='Всего: '.$sum;
 
-$m = mail("sansansanzhik@gmail.com", "Заголовок", "Текст сообщения");
+/*$m = mail("sansansanzhik@gmail.com", "Заголовок", "Текст сообщения");
 
-if ($m){echo 1;} else {echo 0;}
+if ($m){echo 1;} else {echo 0;}*/
 
 
 
-/*$to = 'sansansanzhik@gmail.com'.','; //не забудь поменять!
+$to = 'sansansanzhik@gmail.com'.',';
 $to .=$_POST['email'];
 $spectext = '<!DOCTYPE HTML><html><head><title>Заказ</title></head><body>';
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 $m = mail($to, 'Заказ в магазине', $spectext.$message.'</body></html>', $headers);
-if ($m){echo 1;} else {echo 0;}*/
+if ($m){echo 1;} else {echo 0;}
 
