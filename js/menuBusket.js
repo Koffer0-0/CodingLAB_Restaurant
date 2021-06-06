@@ -1,7 +1,6 @@
 var cart = {}; // корзина продуктов
 function init() {
     //вычитуем файл goods.json и закидывает в фунцию гудсаут
-    // $.getJSON("test.json", goodsOut);
     $.post(
         "Admin/core.php",
         {
@@ -10,7 +9,6 @@ function init() {
         goodsOut
     );
 }
-
 function goodsOut(data) {
     // вывод на страницу
     data = JSON.parse(data);
@@ -53,15 +51,21 @@ function saveCart() {
 
 function showMiniCart() {
     //показываю мини корзину
-    $.getJSON("test.json", function(data){
+    $.post(
+        "Admin/core.php",
+        {
+            "action" : "loadGoods"
+        },
+        function(data){
+        data = JSON.parse(data);
         var goods=data;
         var out="";
         for (var id in cart) 
         {
         out+=`<div class="basketProduct">`;
-        out+=`<div class="basketLeft"><img src="images/${goods[id].picture}"></div>`;
+        out+=`<div class="basketLeft"><img src="images/${goods[id].Picture}"></div>`;
         out+=`<div class="basketRight">`;
-        out+=`<p>${goods[id].title}<b style="float: right;">${goods[id].price} tg</b></p>`;
+        out+=`<p>${goods[id].Title}<b style="float: right;">${goods[id].Price} tg</b></p>`;
         out+=`<div>`;
         out+=`<button><img class="minus-to-cart" data-id="${id}" src="images/minus.png"></button>`;
         out+=`<span>  ${cart[id]}  </span>`;
@@ -70,7 +74,8 @@ function showMiniCart() {
         out+=`</div></div></div>`;
         }
         $('.mini-cart').html(out);
-       
+        $('.minus-to-cart').on('click', minusToCart);
+        $('.plus-to-cart').on('click', plusToCart);
         $('.delete-to-cart').on('click', deleteToCart);
     }); 
 }
@@ -85,11 +90,18 @@ function minusToCart(){
     var id = $(this).attr('data-id');
     // console.log(id);
     if (cart[id]==1) {
-        $(this).deleteToCart();
+        delete cart[id];
     }
     else {
         cart[id]--; //если такой товар есть - увеличиваю на единицу
     }
+    showMiniCart();
+    saveCart();
+}
+function plusToCart() {
+    //добавляем товар в корзину
+    var id = $(this).attr('data-id');
+        cart[id]++; //если такой товар есть - увеличиваю на единицу
     showMiniCart();
     saveCart();
 }
