@@ -1,6 +1,6 @@
 <?php
 // читать json файл
-$json = file_get_contents('../test.json');
+$json = file_get_contents('test.json');
 $json = json_decode($json, true);
 
 //письмо
@@ -24,8 +24,6 @@ $message .='Всего: '.$sum;
 /*$m = mail("sansansanzhik@gmail.com", "Заголовок", "Текст сообщения");
 
 if ($m){echo 1;} else {echo 0;}*/
-
-
 
 $to = 'sansansanzhik@gmail.com'.',';
 $to .=$_POST['email'];
