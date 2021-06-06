@@ -105,6 +105,12 @@ function plusToCart() {
     showMiniCart();
     saveCart();
 }
+function deleteAllToCart()
+{
+    cart = {};
+    saveCart();
+    showMiniCart();    
+}
 
 function loadCart() {
     //проверяю есть ли в localStorage запись cart
@@ -114,8 +120,8 @@ function loadCart() {
         showMiniCart();
     }
 }
-
 $(document).ready(function () {
     init();
     loadCart();
+    $('.deleteAll-to-cart').on('click',deleteAllToCart)
 });

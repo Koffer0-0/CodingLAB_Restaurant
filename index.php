@@ -304,6 +304,7 @@
 <!--ЗОНА ДЛЯ ПОДКЛЮЧЕНИЯ JAVASCRIPT ФАЙЛОВ К ОСНОВНОЙ СТРАНИЦЕ-->
 <script src="js/menuCategory.js"></script>
 <script src="js/menuBusket.js"></script>
+<script src="js/menuForm.js"></script>
 
 
 <!-- MAXZONE -->
