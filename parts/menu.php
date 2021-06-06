@@ -21,7 +21,49 @@
 
          <!--//////////////////////////////////////////////////////////-->
                   <div class="row menuOrder ">
-                    <button type="button" class="btn btn-danger">ЗАКАЗАТЬ</button>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#menuModal">ЗАКАЗАТЬ</button>
+
+                        <div id="menuModal" class="modal fade" >
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-header"><h4 class="modal-title">ФОРМА ЗАКАЗА</h4></div>
+                                <div class="modal-body">
+                                  <div class="menuButton">
+                                    <p>Имя: <input type="text" id="name"></p>
+                                    <p>email: <input type="text" id="email"></p>
+                                    <p>Телефон: <input type="text" id="phone"></p>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="menuSendModal" data-dismiss="modal">Отправить</button>
+                                  <button data-dismiss="modal">Отмена</button>
+                                </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <!--тестовая версия красивой готовый формы не удалять-->
+                        <!--<div id="menuModal" class="modal fade" > 
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-header"><h4 class="modal-title">ФОРМА ЗАКАЗА</h4></div>
+                                <div class="modal-body">
+                                  <form>
+                                    
+                                  </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="menuSendModal" data-dismiss="modal">Отправить</button>
+                                  <button data-dismiss="modal">Отмена</button>
+                                </div>
+
+                            </div>
+                          </div>
+                        </div>-->
+
+
                   </div>      
             </div>
 
