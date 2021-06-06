@@ -3,11 +3,11 @@ function init() {
     //вычитуем файл goods.json и закидывает в фунцию гудсаут
     // $.getJSON("test.json", goodsOut);
     $.post(
-        "admin/core.php",
+        "Admin/core.php",
         {
             "action" : "loadGoods"
         },
-        goodsOut()
+        goodsOut
     );
 }
 
@@ -17,11 +17,11 @@ function goodsOut(data) {
     var out = '';
     for (var key in data) 
     {
-        out+=`<div class="col-6 menuProduct" data-category="${data[key].category}" >`;
-        out+=`<div class="menuLeft"><img src="images/${data[key].picture}"></div>`;
+        out+=`<div class="col-6 menuProduct" data-category="${data[key].Category}" >`;
+        out+=`<div class="menuLeft"><img src="images/${data[key].Picture}"></div>`;
         out+=`<div class="menuRight">`;
-        out+=`<p>${data[key].title}<b style="float: right;">${data[key].price} tg</b></p>`;
-        out+=`<p>${data[key].description}</p>`;
+        out+=`<p>${data[key].Title}<b style="float: right;">${data[key].Price} tg</b></p>`;
+        out+=`<p>${data[key].Description}</p>`;
         out+=`<div style="float: right;" >`;
         out+=`<button><img class="add-to-cart" data-id="${key}" src="images/cart.png"></button>`;
         out+=`<button><img class="delete-to-cart" data-id="${key}" src="images/trush.png"></button>`;

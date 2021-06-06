@@ -13,7 +13,7 @@
                           </ul>
                   </div>
 
-                  <div class = "goods-out-main row menuScroll " >
+                  <div class = "goods-out-main row menuScroll">
                   </div>
 
 

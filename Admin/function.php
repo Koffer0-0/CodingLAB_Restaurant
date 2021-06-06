@@ -17,9 +17,25 @@ function init() {
     else {
         echo "0";
     }
-    mysqli_close($result);
+    mysqli_close($conn);
 }
-
+function loadGoods() {
+    $obj = new Show();
+    $conn = $obj->connect();
+    $sql = "SELECT * FROM recieps";
+    $result = mysqli_query($conn, $sql);
+    if (mysqli_num_rows($result) > 0) {
+        $out = array();
+        while ($row = mysqli_fetch_assoc($result)) {
+            $out[$row["id"]] = $row;
+        }
+        echo json_encode($out);
+    }
+    else {
+        echo "0";
+    }
+    mysqli_close($conn);
+}
 function selectOneGoods() {
     $obj = new Show();
     $conn = $obj->connect();
@@ -79,7 +95,7 @@ function deleteGoods() {
     $obj = new Show();
     $conn = $obj->connect();
     $id = $_POST['id'];
-        
+
     $sql = "DELETE FROM recieps WHERE id = '$id'";
     if (mysqli_query($conn, $sql)) {
         echo "success deleted!";
