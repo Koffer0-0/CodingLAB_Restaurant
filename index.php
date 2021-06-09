@@ -63,7 +63,7 @@
                     $_SESSION['message'] = 'Wellcome!';
                     $Chel = $_SESSION['user']->login;
                     if ($_SESSION['user']) {
-                        echo '<p class = "msg"> '.$_SESSION['message'].' '.$Chel.'</p>';
+                        echo '<p class = "msg" style = "color: white;"> '.$_SESSION['message'].' '.$Chel.'</p>';
 
                     } ?>
                 </span>
@@ -160,8 +160,8 @@
                     <h3 class="block_info_title">
                         Лучшие в своей сфере!
                     </h3>
-                    <p class="block_info_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repelpiciatis. Necessitatibus autem et nisi.</p>
-                    <p class="block_info_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda qua.</p>
+                    <p class="block_info_text">Ресторан, где в XIX веке собирался московский бомонд, продолжает оставаться местом паломничества особенно предвзятых гурманов.</p>
+                    <p class="block_info_text">Наша доска почета лучших в регионе сотрудников! Они прошли проффесиональное обучение в странах Европы.</p>
                 </div>
 
                 <div class="block_person">
@@ -193,7 +193,7 @@
         <div class="header-overlay"></div>
         <div class="header-content text-md-center">
           <h1>НАШ БАНКЕТНЫЙ ЗАЛ</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quasi consequatur dolorum omnis iste sunt quae possimus magnam. Sunt, laboriosam?</p>
+          <p>Самый роскошный зал в котором когда вы либо были. А приукрашено это все Французским сервисом, при такой роскоши, вкусовые рецепторы кардинально меняют восприятие наших блюд!</p>
           <a href="#form" class="btn">ПОДРОБНО</a>
         </div>
     </section>
@@ -231,6 +231,9 @@
             </div>
         </div>
     </section>
+
+    <?php require('parts/menu.php'); ?>
+
 
     <footer class="footer">
         <div class="container">
@@ -296,8 +299,6 @@
             </div>
         </div>
     </footer>
-	<?php require('parts/menu.php'); ?>
-<hr>
 
 
 <!--------------------------------------------------------------------------------------------------------------------->
