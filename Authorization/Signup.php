@@ -77,7 +77,7 @@
             echo '<div style = "color: green;"> Wellcome! </div><hr>';
             header('Location: ../index.php');
         } else {
-            echo '<div id = "errors" style = "color: rgb(255, 58, 39); font-size: 50px; text-align: center;">'.array_shift($errors).'</div><hr>';
+            echo '<div id = "errors" style = "color: rgb(25, 58, 39); font-size: 50px; text-align: center;">'.array_shift($errors).'</div><hr>';
         }
 
     }
