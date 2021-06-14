@@ -220,12 +220,12 @@
                     </div>
                 </div>
                 <div class="banquet_form_block" >
-                    <form action="#" class="form_01">
+                    <form action="Database/send.php" class="form_01">
                         <h2 id="form" class="form_title">ОСТАВИТЬ ЗАЯВКУ/ЗАБРОНИРОВАТЬ</h2>
-                        <input type="text" class="form_input" placeholder="ВАШЕ ИМЯ:">  
-                        <input type="text" class="form_input" placeholder="ВАШ НОМЕР ТЕЛЕФОНА:"> 
+                        <input type="text" class="form_input" placeholder="ВАШЕ ИМЯ:" name = "name">
+                        <input type="text" class="form_input" placeholder="ВАШ НОМЕР ТЕЛЕФОНА:" name = "tel_number">
 
-                        <button class="reservation">ОТПРАВИТЬ</button>
+                        <button class="reservation" type="submit" name="ЗАЯВКА">ОТПРАВИТЬ</button>
                         </form>
                 </div>
             </div>
@@ -246,7 +246,7 @@
                         <li class="menu_item"><a href="#" class="menu_list-link">Главное</a></li>
                         <li class="menu_item"><a href="#" class="menu_list-link">Меню</a></li>
                         <li class="menu_item"><a href="#" class="menu_list-link">Контакты</a></li>
-                        <li class="menu_item"><a href="#" class="menu_list-link">Админка</a></li>
+                        <li class="menu_item"><a href="Authorization/loginpanel.php" class="menu_list-link">Авторизация</a></li>
                     </ul>
                 </nav>
                 <a class="tel" href="tel:777777777">+777777777</a>
