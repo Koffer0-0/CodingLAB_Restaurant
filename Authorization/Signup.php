@@ -5,15 +5,13 @@
     
     function captcha_show() {
         $questions = array (
-            1 => 'Capital city of QAZAQSTAN?',
-            2 => 'Capital city of CANADA?',
+            1 => '2 * 3',
+            2 => '14 + 43',
             3 => '2 + 3',
             4 => '15 + 14',
             5 => '42 - 10',
             6 => '33 - 5',
-            7 => '15 / 5',
-            8 => '2 * 3',
-            9 => '14 + 88'
+            7 => '15 / 5'
         );
         $num = mt_rand(1, count($questions));
         $_SESSION['captcha'] = $num;
@@ -52,15 +50,13 @@
 
         //проверка капчи
         $answers = array (
-            1 => 'Astana',
-            2 => 'Ottawa',
+            1 => '6',
+            2 => '57',
             3 => '5',
             4 => '29',
             5 => '32',
             6 => '28',
-            7 => '3',
-            8 => '6',
-            9 => '102'
+            7 => '3'
         );
         
         if ($_SESSION['captcha'] != array_search(mb_strtolower($_POST['captcha']), $answers)) {
